@@ -1,4 +1,4 @@
-# dance
-Hobby project
+- Going through Test-Driven-Development with Python step by step coding along.
 
-Heureka!
+- Keeping track of current status here
+    - https://www.obeythetestinggoat.com/book/chapter_post_and_database.html
