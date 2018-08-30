@@ -13,8 +13,7 @@ parallel, as that keeps the focus both on the low level internal consistency,
 but also tying back to the user story level to ensure the code actually is 
 achieving something of use.
 
-Part 2: Real Developers Ship
+## Part 2: Real Developers Ship
 
-
-Current status:
-    - Prettification: Layout and Styling, and What to Test About It
+## Current chapter:
+**8. Prettification: Layout and Styling, and What to Test About It**
