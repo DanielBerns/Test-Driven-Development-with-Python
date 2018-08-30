@@ -1,13 +1,14 @@
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
 import time
 
+import logging
 
 MAX_WAIT = 10
 
-class NewVisitorTest(LiveServerTestCase):
+class NewVisitorTest(StaticLiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -110,6 +111,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         # find css tag and div box tag, check that class name is correct?
         inputbox = self.browser.find_element_by_id('id_new_item')
+
         self.assertAlmostEqual(inputbox.location['x'] +
                                inputbox.size['width'] / 2,
                                512,
@@ -120,6 +122,6 @@ class NewVisitorTest(LiveServerTestCase):
         self.wait_for_row_in_list_table('1: testing')
         inputbox = self.browser.find_element_by_id('id_new_item')
         self.assertAlmostEqual(
-            inputbox.size['width'] / 2,
+            inputbox.location['x'] + inputbox.size['width'] / 2,
             512,
             delta=10)
