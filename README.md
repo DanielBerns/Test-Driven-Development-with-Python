@@ -25,3 +25,13 @@ I expect that for a beginner with no previous experience of servers, this might
 have been a very steep learning curve.
 
 **10. Getting to a Production-Ready Deployment**
+Installing and configuring nginx and gunicorn in order to replace the Django 
+built-in server. Further, updating settings.py to look for environment variables 
+so that debug and allowed_hosts have more secure settings in production mode.
+
+Overall straight forward, but a good reminder of how much time you can end up 
+spending on troubleshooting the smallest typo when it comes to server 
+configurations.
+
+**11. Automating Deployment with Fabric**
+https://www.obeythetestinggoat.com/book/chapter_automate_deployment_with_fabric.html
