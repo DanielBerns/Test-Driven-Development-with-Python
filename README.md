@@ -15,5 +15,8 @@ achieving something of use.
 
 ## Part 2: Real Developers Ship
 
-## Current chapter:
 **8. Prettification: Layout and Styling, and What to Test About It**
+Quick intro to bootstrap and django templating.
+
+**9. Testing Deployment Using a Staging Site**
+https://www.obeythetestinggoat.com/book/chapter_manual_deployment.html
