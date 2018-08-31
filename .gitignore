@@ -5,3 +5,4 @@ geckodriver.log
 *.pyc
 __pycache__
 /static
+.env
