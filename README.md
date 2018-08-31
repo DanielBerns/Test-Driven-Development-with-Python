@@ -19,4 +19,9 @@ achieving something of use.
 Quick intro to bootstrap and django templating.
 
 **9. Testing Deployment Using a Staging Site**
-https://www.obeythetestinggoat.com/book/chapter_manual_deployment.html
+Pushing you to setup the site on an actual server and get a proper domain. 
+Really appreciated the push, and it went smoothly to set it up in AWS, though 
+I expect that for a beginner with no previous experience of servers, this might 
+have been a very steep learning curve.
+
+**10. Getting to a Production-Ready Deployment**
