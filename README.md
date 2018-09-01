@@ -34,4 +34,10 @@ spending on troubleshooting the smallest typo when it comes to server
 configurations.
 
 **11. Automating Deployment with Fabric**
-https://www.obeythetestinggoat.com/book/chapter_automate_deployment_with_fabric.html
+Excellent chapter that shows both how easy deployment becomes with Fabric, but 
+also some really neat CL commands to work with template files. No matter how 
+much else from this book I actually end up using, I'm sure this will come in 
+handy on many occasions.
+
+**12. Splitting Our Tests into Multiple Files, and a Generic Wait Helper**
+https://www.obeythetestinggoat.com/book/chapter_organising_test_files.html
