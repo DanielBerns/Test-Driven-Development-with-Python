@@ -44,4 +44,6 @@ Example; ```cat ./deploy_tools/gunicorn-systemd.template.service \
 | sudo tee /etc/systemd/system/gunicorn-prod.randomtechramblings.com.service```
 
 **12. Splitting Our Tests into Multiple Files, and a Generic Wait Helper**
-https://www.obeythetestinggoat.com/book/chapter_organising_test_files.html
+Quick chapter just to refactor the tests into a more maintainable structure.
+
+**13. Validation at the Database Layer**
