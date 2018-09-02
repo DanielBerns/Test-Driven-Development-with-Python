@@ -39,5 +39,9 @@ also some really neat CL commands to work with template files. No matter how
 much else from this book I actually end up using, I'm sure this will come in 
 handy on many occasions.
 
+Example; ```cat ./deploy_tools/gunicorn-systemd.template.service \ 
+| sed "s/DOMAIN/prod.randomtechramblings.com/g" \ 
+| sudo tee /etc/systemd/system/gunicorn-prod.randomtechramblings.com.service```
+
 **12. Splitting Our Tests into Multiple Files, and a Generic Wait Helper**
 https://www.obeythetestinggoat.com/book/chapter_organising_test_files.html
