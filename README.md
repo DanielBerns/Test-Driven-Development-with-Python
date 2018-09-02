@@ -47,3 +47,7 @@ Example; ```cat ./deploy_tools/gunicorn-systemd.template.service \
 Quick chapter just to refactor the tests into a more maintainable structure.
 
 **13. Validation at the Database Layer**
+Starting to add a bit more Django magic to help out with routing and form 
+validation.
+
+**14. A Simple Form**
