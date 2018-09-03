@@ -51,3 +51,12 @@ Starting to add a bit more Django magic to help out with routing and form
 validation.
 
 **14. A Simple Form**
+Long chapter introducing Django forms, and a bit intentionally tedious 
+refactoring to really push for TDD discipline. As my interest lies more 
+in learning more Python and TDD than Django, some of the content felt 
+less interesting than many of the previous chapters.
+
+One thing to remember; self.fail(object) prints the object to the CL, 
+which can help a lot when debugging failing tests...
+
+**15. More Advanced Forms**
