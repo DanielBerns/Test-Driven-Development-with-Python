@@ -60,3 +60,9 @@ One thing to remember; self.fail(object) prints the object to the CL,
 which can help a lot when debugging failing tests...
 
 **15. More Advanced Forms**
+Guess I want to be a completionist in regards to this book, because I went 
+through this chapter too though it was clearly marked as optional. Hopefully, 
+getting a bit more familiarity with the Django forms will come in handy at some 
+point in the future.
+
+**16. Dipping Our Toes, Very Tentatively, into JavaScript**
