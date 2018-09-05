@@ -66,3 +66,10 @@ getting a bit more familiarity with the Django forms will come in handy at some
 point in the future.
 
 **16. Dipping Our Toes, Very Tentatively, into JavaScript**
+Short chapter with just the bare minimums, which suits me quite nice. I 
+would though have appreciated a bit of discussion on the duplication of 
+html code, when the unit test doesn't actually test the django template 
+it seems like it's bound to happen that the markup there at some point 
+will change, without the javascript test being properly updated.
+
+**17. Deploying Our New Code**
