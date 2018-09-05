@@ -73,3 +73,8 @@ it seems like it's bound to happen that the markup there at some point
 will change, without the javascript test being properly updated.
 
 **17. Deploying Our New Code**
+Another short chapter, since the release process was semi automated already. 
+
+## Part 3: More Advanced Topics in Testing
+
+**18. User Authentication, Spiking, and De-Spiking**
