@@ -78,3 +78,8 @@ Another short chapter, since the release process was semi automated already.
 ## Part 3: More Advanced Topics in Testing
 
 **18. User Authentication, Spiking, and De-Spiking**
+Example of doing a quick and dirty proof of concept first to assure that 
+a solution is viable, and once proven to scrap it and rewrite the code 
+using TDD.
+
+**19. Using Mocks to Test External Dependencies or Reduce Duplication**
