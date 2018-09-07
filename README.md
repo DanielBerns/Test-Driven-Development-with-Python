@@ -83,3 +83,4 @@ a solution is viable, and once proven to scrap it and rewrite the code
 using TDD.
 
 **19. Using Mocks to Test External Dependencies or Reduce Duplication**
+-- Halting at 'An Alternative Reason to Use Mocks: Reducing Duplication' WIP
