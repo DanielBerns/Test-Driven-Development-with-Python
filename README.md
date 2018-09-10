@@ -83,4 +83,9 @@ a solution is viable, and once proven to scrap it and rewrite the code
 using TDD.
 
 **19. Using Mocks to Test External Dependencies or Reduce Duplication**
--- Halting at 'An Alternative Reason to Use Mocks: Reducing Duplication' WIP
+Finishing up auth functionality along with tests that mocks the e-mail 
+send out. Back to focus on the core python unit test packages, which I 
+appreciate.
+
+**20. Test Fixtures and a Decorator for Explicit Waits**
+[WIP]
