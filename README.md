@@ -88,4 +88,9 @@ send out. Back to focus on the core python unit test packages, which I
 appreciate.
 
 **20. Test Fixtures and a Decorator for Explicit Waits**
-[WIP]
+Adding fixtures to help test isolated parts more efficiently without 
+having to go through the whole setup process (eg. logging in) every 
+time in the browser.
+
+Further, providing a neat example of creating a decorator in order to 
+avoid duplicate code.
