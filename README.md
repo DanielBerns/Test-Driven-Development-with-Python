@@ -94,3 +94,6 @@ time in the browser.
 
 Further, providing a neat example of creating a decorator in order to 
 avoid duplicate code.
+
+**21. Server-Side Debugging**
+[WIP]
