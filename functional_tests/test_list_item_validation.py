@@ -17,16 +17,6 @@ class ItemValidationTest(FunctionalTest):
             '#id_text:invalid'
         ))
 
-        ## Commented out as HTML5 ensures client side validation so the
-        ## form isn't submitted in the first place
-        ##
-        # The home page refreshes, and there is an error message saying
-        # that list items cannot be blank
-        # self.wait_for(lambda: self.assertEqual(
-        #     self.browser.find_element_by_css_selector('.has-error').text,
-        #     "You can't have an empty list item"
-        # ))
-
         # She tries again with some text for the item, which now works
         self.get_item_input_box().send_keys('Buy milk')
         self.wait_for(lambda: self.browser.find_elements_by_css_selector(
@@ -45,13 +35,6 @@ class ItemValidationTest(FunctionalTest):
             '#id_text:invalid'
         ))
 
-        ## As above, replaced by HTML5 client side validation
-        # She receives a similar warning on the list page
-        # self.wait_for(lambda: self.assertEqual(
-        #     self.browser.find_element_by_css_selector('.has-error').text,
-        #     "You can't have an empty list item"
-        # ))
-
         # And she can correct it by filling some text in
         self.get_item_input_box().send_keys('Make tea')
         self.wait_for(lambda: self.browser.find_elements_by_css_selector(
@@ -63,9 +46,7 @@ class ItemValidationTest(FunctionalTest):
 
     def test_cannot_add_duplicate_item(self):
         self.browser.get(self.live_server_url)
-        self.get_item_input_box().send_keys('Buy wellies')
-        self.get_item_input_box().send_keys(Keys.ENTER)
-        self.wait_for_row_in_list_table('1: Buy wellies')
+        self.add_list_item('Buy wellies')
 
         # Trying to add duplicate
         self.get_item_input_box().send_keys('Buy wellies')
@@ -79,9 +60,9 @@ class ItemValidationTest(FunctionalTest):
 
     def test_error_messages_are_cleared_on_input(self):
         self.browser.get(self.live_server_url)
-        self.get_item_input_box().send_keys('Banter too thick')
-        self.get_item_input_box().send_keys(Keys.ENTER)
-        self.wait_for_row_in_list_table('1: Banter too thick')
+
+        self.add_list_item('Banter too thick')
+
         self.get_item_input_box().send_keys('Banter too thick')
         self.get_item_input_box().send_keys(Keys.ENTER)
 
