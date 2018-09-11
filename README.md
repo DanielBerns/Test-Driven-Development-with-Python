@@ -96,4 +96,16 @@ Further, providing a neat example of creating a decorator in order to
 avoid duplicate code.
 
 **21. Server-Side Debugging**
+Setting up FT so that we check that e-mails actually gets sent out on the 
+staging server. Here there were some inaccuracies in regards as to how 
+the POP protocol works, and I had to update the code a bit to get it 
+working. Further, the Yahoo mail server needed an app password (and 
+for that, 2F auth enabled) to allow POP connection.
+
+Further, getting into some neat Python functionality with 
+a good example of using decorators. Lastly, revisiting Fabric, and how to 
+allow the functional tests to interact with the staging server when run 
+from localhost. Great chapter all in all.
+
+**22. Finishing "My Lists": Outside-In TDD**
 [WIP]
