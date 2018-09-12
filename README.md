@@ -107,5 +107,28 @@ a good example of using decorators. Lastly, revisiting Fabric, and how to
 allow the functional tests to interact with the staging server when run 
 from localhost. Great chapter all in all.
 
-**22. Finishing "My Lists": Outside-In TDD**
-[WIP]
+**22. Finishing "My Lists": Outside-In TDD** 
+Clarifying the concept of working from outside and in, i.e. start with a 
+failing functional test mirroring a user story, and then gradually work 
+inwards as needed in order to get the full test to pass.
+
+Among the benefits of this approach is that your APIs gets built based 
+on what makes sense on higher abstraction levels rather than vice versa. 
+Additionally, keeping the development tied to solving the user story 
+reduces the risk of ending up writing too much low level code trying to 
+support features that you probably are never going to need.
+
+Lastly, working from the outside-in with the user flows should help you 
+identify UX problems, or at least be able to provide early prototypes to 
+stakeholders for testing as needed.
+
+**23. Test Isolation, and "Listening to Your Tests"**
+> At the models layer, we no longer need to write isolated tests—​the whole 
+point of the models layer is to integrate with the database, so it’s 
+appropriate to write integrated tests"
+
+I don't agree fully with this. It can make sense to keep models as 
+framework agnostic as possible as well, and instead rely on a repository 
+pattern for the storage. The main purpose of this would then be to more 
+easily be able to switch out the persistence backend without affecting 
+the logic of the model.
