@@ -132,3 +132,9 @@ framework agnostic as possible as well, and instead rely on a repository
 pattern for the storage. The main purpose of this would then be to more 
 easily be able to switch out the persistence backend without affecting 
 the logic of the model.
+
+The chapter was overall informative and gave some good insights into 
+pros and cons with more integrated vs. isolated tests. I think the 
+resetting of master to a tag wasn't the nicest git workflow, meaning 
+in the end I had to use `git push --force` to overwrite the previous 
+master state in the origin repo.
