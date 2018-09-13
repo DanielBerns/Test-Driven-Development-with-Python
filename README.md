@@ -152,4 +152,5 @@ always get executed correctly. In the end, I paused the test in question
 to be able to move on.
 
 **25. The Token Social Bit, the Page Pattern, and an Exercise for the Reader**
-[WIP]
+[WIP] Out of time before vacation, will pick up from _An Exercise for the 
+Reader_ in early October when I'm back.
