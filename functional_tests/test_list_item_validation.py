@@ -58,6 +58,7 @@ class ItemValidationTest(FunctionalTest):
             DUPLICATE_ITEM_ERROR
         ))
 
+    @skip
     def test_error_messages_are_cleared_on_input(self):
         self.browser.get(self.live_server_url)
 

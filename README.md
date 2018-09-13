@@ -140,4 +140,16 @@ in the end I had to use `git push --force` to overwrite the previous
 master state in the origin repo.
 
 **24. Continuous Integration (CI)**
+Great chapter on settings up and configuring Jenkins to do continuous 
+testing. Involved some troubleshooting to get the tests working, and 
+in the end I had some functional test that inconsistently kept failing 
+on the Jenkins server, but runs fine on localhost and staging server. 
+
+It seems that there's something weird in the current Linux Firefox 
+version, as far as I can tell, that means that the javascript doesn't 
+always get executed correctly. In the end, I paused the test in question 
+(ItemValidationTest.test_error_messages_are_cleared_on_input) in order 
+to be able to move on.
+
+**25. The Token Social Bit, the Page Pattern, and an Exercise for the Reader**
 [WIP]
