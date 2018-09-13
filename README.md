@@ -138,3 +138,6 @@ pros and cons with more integrated vs. isolated tests. I think the
 resetting of master to a tag wasn't the nicest git workflow, meaning 
 in the end I had to use `git push --force` to overwrite the previous 
 master state in the origin repo.
+
+**24. Continuous Integration (CI)**
+[WIP]
