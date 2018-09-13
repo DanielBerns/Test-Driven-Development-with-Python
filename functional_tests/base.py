@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 from .server_tools import reset_database
 
-MAX_WAIT = 30
+MAX_WAIT = 60
 SCREEN_DUMP_LOCATION = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), 'screendumps'
 )
