@@ -1,16 +1,21 @@
 import os
 from datetime import datetime
+from django.conf import settings
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.keys import Keys
 import time
 from .server_tools import reset_database
+from .server_tools import create_session_on_server
+from .management.commands.create_session import \
+    create_pre_authenticated_session
 
 MAX_WAIT = 10
 SCREEN_DUMP_LOCATION = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), 'screendumps'
 )
+
 
 class FunctionalTest(StaticLiveServerTestCase):
 
@@ -34,6 +39,21 @@ class FunctionalTest(StaticLiveServerTestCase):
 
         self.browser.quit()
         super().tearDown()
+
+    def create_pre_authenticated_session(self, email):
+        if self.staging_server:
+            session_key = create_session_on_server(self.staging_server,
+                                                   email)
+        else:
+            session_key = create_pre_authenticated_session(email)
+
+        # Visit a fast loading page to set a cookie
+        self.browser.get(self.live_server_url  + '/404_no_such_url')
+        self.browser.add_cookie(dict(
+            name=settings.SESSION_COOKIE_NAME,
+            value=session_key,
+            path='/',
+        ))
 
     def _test_has_failed(self):
         # hack
