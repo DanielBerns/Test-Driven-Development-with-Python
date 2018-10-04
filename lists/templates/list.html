@@ -15,4 +15,10 @@
     {% csrf_token %}
     <input name="sharee" placeholder="your-friend@example.com">
 </form>
+
+<ul>
+    {% for user in list.shared_with.all %}
+    <li class="list-sharee">{{ user.email }}</li>
+    {% endfor %}
+</ul>
 {% endblock %}

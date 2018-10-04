@@ -207,6 +207,17 @@ class MyListsTest(TestCase):
         response = self.client.get('/lists/users/a@b.com/')
         self.assertEqual(response.context['owner'], correct_user)
 
+    def test_displays_lists_shared_with_me(self):
+        User.objects.create(email='a@b.com')
+        list_ = List.objects.create()
+        Item.objects.create(list=list_, text='A shared list')
+
+        share_url = f'/lists/{list_.id}/share'
+        self.client.post(share_url, data={'sharee': 'a@b.com'})
+
+        response = self.client.get('/lists/users/a@b.com/')
+        self.assertContains(response, 'A shared list')
+
 
 class ShareListTest(TestCase):
 
@@ -227,3 +238,13 @@ class ShareListTest(TestCase):
         response = self.client.post(share_url, data={'sharee': 'a@b.com'})
 
         self.assertIn(user, list_.shared_with.all())
+
+    def test_shows_users_list_is_shared_with(self):
+        user = User.objects.create(email='a@b.com')
+        list_ = List.objects.create()
+
+        share_url = f'/lists/{list_.id}/share'
+        response = self.client.post(share_url, data={'sharee': 'a@b.com'},
+                                    follow=True)
+
+        self.assertContains(response, 'a@b.com')
