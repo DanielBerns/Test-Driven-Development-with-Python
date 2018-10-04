@@ -46,7 +46,6 @@ class SharingTest(FunctionalTest):
         self.browser.find_element_by_link_text('Get help').click()
 
         # On list page, it says it's Ediths list
-        # @todo: Does this logic work? Doesn't list_page still refer to above?
         self.wait_for(lambda: self.assertEqual(
             list_page.get_list_owner(),
             'edith@example.com'

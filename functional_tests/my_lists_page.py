@@ -1,6 +1,6 @@
 class MyListsPage(object):
 
-    def __init__(self):
+    def __init__(self, test):
         self.test = test
 
     def go_to_my_lists_page(self):

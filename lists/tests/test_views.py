@@ -248,3 +248,10 @@ class ShareListTest(TestCase):
                                     follow=True)
 
         self.assertContains(response, 'a@b.com')
+
+    def test_list_shows_owner(self):
+        user = User.objects.create(email='a@b.com')
+        self.client.force_login(user)
+        response = self.client.post('/lists/new', data={'text': 'new item'},
+                                    follow=True)
+        self.assertContains(response, '<span id="id_list_owner">a@b.com</span>')

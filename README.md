@@ -152,5 +152,16 @@ always get executed correctly. In the end, I paused the test in question
 to be able to move on.
 
 **25. The Token Social Bit, the Page Pattern, and an Exercise for the Reader**
-[WIP] Out of time before vacation, will pick up from _An Exercise for the 
-Reader_ in early October when I'm back.
+The chapter gives you a broken functional test, and then points you through 
+initial steps that will be needed to solve.
+
+After two weeks of vacation, coming back into this and now having to apply the 
+methodology myself without training wheels, it was a good experience and helped 
+drive home some of the points from earlier chapters.
+
+It's becoming clear to me the importance of using 'spikes' to prototype quickly 
+and test things, because the disciplined approach of always writing tests first 
+really hinges on that you have a clear idea of where you are going.
+
+**26. Fast Tests, Slow Tests, and Hot Lava**
+[WIP]
