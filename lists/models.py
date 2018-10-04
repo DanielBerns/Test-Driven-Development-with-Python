@@ -6,6 +6,8 @@ from django.db import models
 class List(models.Model):
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, blank=True,
                               null=True)
+    shared_with = models.ManyToManyField('accounts.User',
+                                         related_name='list_shared_with_users')
 
     def get_absolute_url(self):
         return reverse('view_list', args=[self.id])
