@@ -1,7 +1,7 @@
 # Test-Driven-Development with Python
-This is a code-along project based on the [book](https://www.obeythetestinggoat.com/), along with notes contained in this readme file.
+My notes and reflections from reading [Test-Driven Development with Python](https://www.obeythetestinggoat.com/) by Harry J.W. Percival and coding along (code found [here](https://github.com/FreddieK/Test-Driven-Development-with-Python)).
 
-**TLDR:** I highly recommend the book as an introduction to TDD in Python, more specifically using the Django framework.
+**TLDR:** I highly recommend the book as an introduction to TDD in Python, more specifically using the Django framework. Pushing the reader to actually setup a staging server together with deployment scripts and a Jenkins server for continuous testing ensures that you get an end-to-end hands-on basic understanding of the process.
 
 ## Part 1: The fundamental workflow of TDD and a gentle introduction to Django
 Setup according to instructions went really smoothly, which was really nice. The instructions were also clear, so very easy to code along. _Quite soon I got into the habit to first try to think about what the next step should be after finishing a piece of code, or after updating a test and getting a new failure._
